@@ -8,14 +8,14 @@ Object detection and classification applications have grown to become one of the
 ## Features
 * **Simplified representation of CarNet**
 
-  -  ![alt text](https://github.com/roniepatil/CarNet-Deep-learning-for-car-classification/blob/main/image_resources/CarNet_representation.png)
+  -  ![alt text](https://github.com/roniepatil/CarNet-Deep-learning-for-car-classification/blob/main/Images/CarNet_representation.png)
 * **CarNet Layers Architecture using EfficientNet-B5 backbone with MLDecoder Classifier**
 
-  - ![alt text](https://github.com/roniepatil/CarNet-Deep-learning-for-car-classification/blob/main/image_resources/CarNet_layers.png)
+  - ![alt text](https://github.com/roniepatil/CarNet-Deep-learning-for-car-classification/blob/main/Images/CarNet_layers.png)
 
 
 ## Results
 Fused two different deep learning architectures taken from the classification block of TResNet-L + MLDecoder implementation that achieves 96.41% accuracy on ImageNet, and the backbone of EfficientNet architectures that require training of significantly lesser number of parameters to predict the brand, model and year of cars from the Stanford Cars Dataset. The idea behind this was to give rise to a scalable model that could be run on different systems which have varying availability of hardware resources such as VRAM, GPUs, CPUs etc. Generated a model with a backbone (EfficientNet-B3) that trained 19 million parameters on a local laptop machine, providing an accuracy of 86%. To further demonstrate the scalability, modified the model with a higher end backbone (EfficientNet-B5) that trained 37 million parameters on Google Colab server with premium GPUs to provide a model with accuracy of 90.9%.
 
- ![alt text](https://github.com/roniepatil/CarNet-Deep-learning-for-car-classification/blob/main/image_resources/output.png)
+ ![alt text](https://github.com/roniepatil/CarNet-Deep-learning-for-car-classification/blob/main/Images/output.png)
 
